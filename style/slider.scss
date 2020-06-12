@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#dosi {
+    margin-bottom: 100px;
+    margin-top: 95px;
+
+    width: 100%;
+    display: flex;
+filter: opacity(90%);
+    .astro {
+        width: 50%;
+
+        img {
+            margin-left: 10px;
+            width: 95%;
+            height: 500px;
+            transition: 0.5s ease-in;
+        }
+
+        img:hover {
+            moz-transform: scaleY(-1);
+            /* Firefox */
+            -o-transform: scaleY(-1);
+            /* Opera */
+            -webkit-transform: scaleY(-1);
+            /* Chrome y Safari */
+            transform: scaleY(-1);
+            /* w3org */
+            filter: FlipV;
+            /* Internet Explorer */
+           
+        }
+
+    }
+
+    .slider {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: cambio 20s infinite alternate linear;
+
+            li {
+                width: 100%;
+                list-style: none;
+
+                img {
+                    width: 95%;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) {
+    #dosi {
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        .astro {
+            width: 90%;
+            margin: auto;
+        }
+
+        .slider {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #dosi {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 95px;
+
+        .astro {
+            width: 90%;
+            margin: auto;
+        }
+
+        .slider {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+
+/* ocultar y agregar info */
+#ocultar {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    color: whitesmoke;
+
+    .akira {
+        display: flex;
+        width: 33%;
+        border: 1px hidden black;
+        padding: 10px;
+
+        .img1 {
+            width: 30%;
+
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                box-shadow: 2px 2px 2px 2px rgb(30, 209, 6);
+            }
+        }
+
+        .text {
+            width: 70%;
+            display: none;
+        }
+
+        .img1:hover {
+            ~.text {
+                display: block;
+            }
+
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .nakaba {
+        display: flex;
+        width: 33%;
+        border: 1px hidden black;
+        padding: 10px;
+
+        .img2 {
+            width: 30%;
+
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                box-shadow: 2px 2px 2px 2px rgb(30, 209, 6);
+            }
+        }
+
+        .text1 {
+            width: 70%;
+            display: none;
+        }
+
+        .img2:hover {
+            ~.text1 {
+                display: block;
+
+            }
+
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .oba {
+        display: flex;
+        width: 33%;
+        border: 1px hidden black;
+        padding: 10px;
+
+        .img3 {
+            width: 30%;
+
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                box-shadow: 2px 2px 2px 2px rgb(30, 209, 6);
+            }
+        }
+
+        .text2 {
+            width: 70%;
+            display: none;
+        }
+
+        .img3:hover {
+            ~.text2 {
+                display: block;
+
+            }
+
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+}
+
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) {
+    #ocultar {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 30%;
+        width: auto;
+        margin: 10px;
+        width: 100%;
+
+        .akira {
+            display: block;
+            width: 100%;
+        }
+
+        .nakaba {
+            display: block;
+            width: 100%;
+        }
+
+        .oba {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #ocultar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 30%;
+        width: auto;
+        margin: 10px;
+
+        .akira {
+            display: block;
+            width: 100%;
+        }
+
+        .nakaba {
+            display: block;
+            width: 100%;
+        }
+
+        .oba {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+/* texto titulo y subtitulo */
+#title1 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    color: whitesmoke;
+    border: whitesmoke 1px solid;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    #title {
+        width: 90%;
+    }
+}
+
+
+//imagenes
+#division {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    filter: opacity(70%);
+>div{
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+    flex: 1;
+}
+    article {
+        width: 33%;
+        height: auto;
+        text-align: center;
+        transition: all 0.25s;
+
+        .imagen {
+            width: 100%;
+            padding: 10px;
+
+            img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        .parrafoi {
+            color: whitesmoke;
+
+            p {
+                padding: 13px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    article:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 2px 2px black;
+
+    }
+}
+
+@media  (max-width: 980px) {
+    #division {
+
+    article {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          &:nth-last-child(2) {
+              margin-right: 0;
+          }
+          &:last-child {
+              flex-basis: 100%;
+              margin: 0;
+          }
+      }
+  }
+}
+  
+  @media  (max-width: 680px) {
+    #division {article {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+}
+
+
+//goku
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+$goku: 'Sriracha',
+cursive;
+
+#padre {
+    margin: auto;
+    width: 75%;
+    height: 700px;
+    background-image: url(../background/arte.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hijo {
+        text-align: center;
+        color: whitesmoke;
+        background-color: #000000;
+        filter: opacity(70%);
+        width: 60%;
+        margin: auto;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #000000;
+            margin-top: 10px;
+            font-size: 15px;
+            margin-bottom: 20px;
+
+            a {
+                color: green;
+                text-decoration: none;
+            }
+        }
+
+        button:hover {
+            background-color: red;
+
+            a {
+                color: black;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1143px) {
+    #padre{
+        width: 75%;
+        height: 555px;
+    }
+}
+
+@media (max-width: 900px) {
+    #padre{
+      width: 100%;
+        .hijo{
+            width: 100%;
+        }
+
+    }
+}
+@media (max-width: 700px) {
+    #padre{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+        .hijo{
+            width: 70%;
+            margin: auto;
+            h1,h3,p{
+                font-size: 15px;
+                margin: auto;
+            }
+        }
+
+    }
+}
+@media (max-width: 600px) {
+    #padre{
+      width: 100%;
+      height: 240px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+        .hijo{
+            width: 70%;
+            margin: auto;
+            filter: opacity(0.5);
+            h1,h3,p{
+                font-size: 15px;
+                margin: auto;
+            }
+        }
+
+    }
+}

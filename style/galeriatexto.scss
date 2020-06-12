@@ -1,0 +1,146 @@
+#title {
+    text-align: center;
+
+    .subtitle {
+        margin-top: 35px;
+        color: whitesmoke;
+        font-size: 20px;
+        
+    }
+
+    h1 {
+        margin-top: 15px;
+        color: whitesmoke;
+        font-size: 40px;
+            }
+
+    .escanor {
+        margin: 15px;
+        img {
+           filter: opacity(50%);
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+        img:hover{
+            cursor: pointer;
+            filter: opacity(100%);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    #title {
+    width: 100%;
+    
+    text-align: center;
+
+    .subtitle {
+        margin-top: 35px;
+        color: whitesmoke;
+        font-size: 20px;
+        background-color: black;
+        filter: opacity(70%);
+    }
+
+    h1 {
+        margin-top: 15px;
+        color: whitesmoke;
+        font-size: 40px;
+        background-color: black;
+        filter: opacity(70%);
+    }
+
+        .escanor {
+            margin: 15px;
+            img {
+               filter: opacity(50%);
+                width: 50%;
+                display: block;
+                margin: auto;
+            }
+            img:hover{
+                cursor: pointer;
+                filter: opacity(100%);
+            }
+        }
+    }
+   
+}
+
+
+@media (max-width: 767px) {
+    #title {
+    width: 100%;
+    
+    text-align: center;
+
+    .subtitle {
+        margin-top: 35px;
+        color: whitesmoke;
+        font-size: 20px;
+        background-color: black;
+        filter: opacity(70%);
+    }
+
+    h1 {
+        margin-top: 15px;
+        color: whitesmoke;
+        font-size: 40px;
+        background-color: black;
+        filter: opacity(70%);
+    }
+
+        .escanor {
+            margin: 15px;
+            img {
+               filter: opacity(50%);
+                width: 50%;
+                display: block;
+                margin: auto;
+            }
+            img:hover{
+                cursor: pointer;
+                filter: opacity(100%);
+            }
+        }
+    }
+   
+}
+
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #title {
+        .subtitle {
+            margin-top: 35px;
+            color: whitesmoke;
+            font-size: 20px;
+            background-color: black;
+        filter: opacity(70%);
+        }
+    
+        h1 {
+            margin-top: 15px;
+            color: whitesmoke;
+            font-size: 40px;
+            background-color: black;
+        filter: opacity(70%);
+        }
+        width: 100%;    
+            .escanor {
+                margin: 15px;
+                img {
+                   filter: opacity(50%);
+                    width: 50%;
+                    display: block;
+                    margin: auto;
+                }
+                img:hover{
+                    cursor: pointer;
+                    filter: opacity(100%);
+                }
+            }
+        }
+   
+}
